@@ -2,10 +2,10 @@ package hw4;
 
 import java.awt.*;
 import java.awt.event.*;
-public class s20140310hw4 extends Frame implements ActionListener
+public class bouncingBalls extends Frame implements ActionListener
 {  	private BallCanvas canvas; 
 	
-	public s20140310hw4()
+	public bouncingBalls()
    	{  	canvas = new BallCanvas();
       	add("Center", canvas);
       	Panel p = new Panel();
@@ -32,7 +32,7 @@ public class s20140310hw4 extends Frame implements ActionListener
 	    }
 	}
 	public static void main(String[] args)
-   	{  	Frame f = new s20140310hw4();
+   	{  	Frame f = new bouncingBalls();
       	f.setSize(400, 300);
       	//WindowDestroyer listener = new WindowDestroyer();  
       		f.addWindowListener(
